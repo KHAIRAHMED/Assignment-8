@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import team from "./Team.css"
+// import team from "./Team.css"
 import male from "../image/male.png"
 import female from "../image/female.png"
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCoffee,faFacebook} from '@fortawesome/free-solid-svg-icons'
+import './Team.css'
 
 
 
@@ -17,7 +15,7 @@ const Team = () => {
         .then(res=>res.json())
         .then(data=>setTeam(data.teams[0]))
     },[id])
-    const{strGender,strFacebook,strInstagram,strTeamBanner,strYoutube,strCountry,strLeague,intFormedYear}=team;
+    const{strGender,strTeamBanner,strCountry,strLeague,intFormedYear}=team;
 
 
     return (
@@ -37,7 +35,7 @@ const Team = () => {
                 </div>
                 <div className="genderImg col-md-6">
                     {
-                        (strGender==female)?<img src={female} alt=""/> : <img src={male} alt=""/>
+                        (strGender=="female")?<img src={female} alt="female"/> : <img src={male} alt="male"/>
                     }
                 </div>
             </div>
@@ -46,12 +44,6 @@ const Team = () => {
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti ab voluptates culpa aliquid! Deleniti veritatis repellendus vitae vel libero? Voluptate tempore ab maiores assumenda magnam placeat tenetur avoluptatem earum aspernatur alias voluptatibus adipisci.</p>
                 <p>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae architecto, sed, ratione animi enim quo veniam odio, harum sint accusantium repudiandae perspiciatis nisi praesentium consectetur iusto tempora veritatis dolorum nesciunt eveniet. Itaque sint cum consectet </p>
-            </div>
-            <div>
-            {/* <p><FontAwesomeIcon icon={faFacebook}/></p> */}
-            {/* <Link to={strFacebook}><FontAwesomeIcon icon={faFacebookSquare} /></Link> */}
-            {/* <Link to={strYoutube}><FontAwesomeIcon icon={faYoutubeSquare} /></Link>
-            <Link to={strInstagram}><FontAwesomeIcon icon={faInstagram} /></Link> */}
             </div>
         </div>
     );

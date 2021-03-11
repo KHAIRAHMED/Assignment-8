@@ -1,10 +1,10 @@
 import React from 'react';
 import { useHistory } from 'react-router';
-import teams from "./Teams.css"
 import Button from 'react-bootstrap/Button';
+import'./Teams.css';
 
 const Teams = (props) => {
-    const {idTeam,strTeamBadge,strTeam,strTeamBanner} =props.team;
+    const {idTeam,strTeamBadge,strTeam} =props.team;
     const history = useHistory();
     const clickHandler=(id)=>{
         history.push(`/details/${id}`)

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Teams from '../Teams/Teams';
-import home from "./Home.css"
+
 import image from '../image/stadium.jpg'
+import'./Home.css'
 
 const Home = () => {
     const [teams,setTeams] = useState([]);
