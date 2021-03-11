@@ -1,0 +1,11 @@
+.teams img{
+    width: 50px;  
+}
+.teams{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px 5px white;
+    text-align: center;
+    color: white;
+   
+}

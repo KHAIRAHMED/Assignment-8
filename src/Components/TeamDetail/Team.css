@@ -1,0 +1,13 @@
+.genderImg img{
+    width: 300px;
+}
+.teamInfo{
+    background:blue;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.teamBanner img {
+    width: 100%;
+    height: 300px;
+}
