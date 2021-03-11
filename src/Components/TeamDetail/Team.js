@@ -4,7 +4,7 @@ import male from "../image/male.png"
 import female from "../image/female.png"
 import './Team.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee,faFlag,faSearchLocation,faFutbol} from '@fortawesome/free-solid-svg-icons'
+import {faFlag,faSearchLocation,faFutbol,faTransgenderAlt} from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF,faInstagramSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
@@ -33,7 +33,7 @@ const Team = () => {
                    <h6><FontAwesomeIcon icon={faSearchLocation} />Founded Year : {intFormedYear}</h6>
                    <h6><FontAwesomeIcon icon={faFlag} />Country :{strCountry}</h6> 
                    <h6><FontAwesomeIcon icon={faFutbol} />Sport Type : Football</h6>
-                   <h6><FontAwesomeIcon icon={faCoffee} />Gender : {strGender}</h6>
+                   <h6><FontAwesomeIcon icon={faTransgenderAlt} />Gender : {strGender}</h6>
                 </div>
                 <div className="genderImg col-md-6">
                     {
